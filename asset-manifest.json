@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/photo-finder-app/static/css/main.e205127d.css",
+    "main.js": "/photo-finder-app/static/js/main.5a4836d2.js",
+    "static/js/787.44d9e2e6.chunk.js": "/photo-finder-app/static/js/787.44d9e2e6.chunk.js",
+    "index.html": "/photo-finder-app/index.html",
+    "main.e205127d.css.map": "/photo-finder-app/static/css/main.e205127d.css.map",
+    "main.5a4836d2.js.map": "/photo-finder-app/static/js/main.5a4836d2.js.map",
+    "787.44d9e2e6.chunk.js.map": "/photo-finder-app/static/js/787.44d9e2e6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e205127d.css",
+    "static/js/main.5a4836d2.js"
+  ]
+}
