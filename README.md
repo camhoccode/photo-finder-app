@@ -18,4 +18,5 @@ Unsplash API
 Unsplash npm package
 
 API docs: https://github.com/unsplash/unsplash-js#search
+
 Obtain your own Unsplash API by create an account on Unsplash and go to: https://unsplash.com/oauth/applications
