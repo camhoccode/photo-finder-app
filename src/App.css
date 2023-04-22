@@ -1,38 +1,79 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
+  background-color: rgb(244, 244, 244);
+  color: #333;
+  font-size: 12px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  width: 100%;
+  max-width: max-content;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1 {
+  font-size: 40px;
+}
+form {
+  display: inline-block;
+}
+label {
+  font-size: 2rem;
+}
+.input {
+  font-size: 1.4rem;
+  padding: 0.5rem 2rem;
+  line-height: 2.7rem;
+  margin-bottom: 12px;
+}
+button {
+  background-color: rebeccapurple;
+  text-decoration-color: black;
   color: white;
+  padding: 1rem 2rem;
+  margin-left: 5px;
+  border-radius: 7px;
+  font-size: 1.4rem;
+}
+button:hover {
+  background-color: royalblue;
 }
 
-.App-link {
-  color: #61dafb;
+.photo-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  height: 350px; /* set a fixed height for the card */
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* resize the image to fit inside the card while preserving aspect ratio */
+}
+@media (max-width: 991px) {
+  .photo-list {
+    grid-template-columns: repeat(3, 1fr);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 767px) {
+  .photo-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 479px) {
+  .photo-list {
+    grid-template-columns: 1fr;
   }
 }
